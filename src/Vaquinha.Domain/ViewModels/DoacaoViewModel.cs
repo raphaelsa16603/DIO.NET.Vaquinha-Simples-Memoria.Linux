@@ -7,7 +7,7 @@ namespace Vaquinha.Domain.ViewModels
         public decimal Valor { get; set; }
 
         [DisplayName("Pagar a taxa do serviço?")]
-        public bool AceitaTaxa {get; private set;}
+        public bool AceitaTaxa {get; set;}
 
         public PessoaViewModel DadosPessoais { get; set; }
         public EnderecoViewModel EnderecoCobranca { get; set; }
