@@ -10,6 +10,8 @@ namespace Vaquinha.Repository.Mapping
         {
             builder.HasKey(a => a.Id);
 
+            builder.Property(e => e.AceitaTaxa);
+
             builder.Property(e => e.Valor)
                 .IsRequired()
                 .HasColumnType("decimal(9,2)");
