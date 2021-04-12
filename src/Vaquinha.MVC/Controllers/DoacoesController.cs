@@ -13,7 +13,8 @@ namespace Vaquinha.MVC.Controllers
 
         public DoacoesController(IDoacaoService doacaoService,
                                  IDomainNotificationService domainNotificationService,
-                                 IToastNotification toastNotification) : base(domainNotificationService, toastNotification)
+                                 IToastNotification toastNotification) :
+                                  base(domainNotificationService, toastNotification)
         {
             _doacaoService = doacaoService;
             _domainNotificationService = domainNotificationService;
